@@ -26,7 +26,9 @@ SET time_zone = "+00:00";
 -- Structure de la table `absences`
 --
 
-CREATE TABLE `absences` (
+DROP TABLE `pb_absences`;
+
+CREATE TABLE `pb_absences` (
   `id` int(11) NOT NULL,
   `perso_id` int(11) NOT NULL DEFAULT '0',
   `debut` datetime NOT NULL,
@@ -54,7 +56,7 @@ CREATE TABLE `absences` (
 -- Contenu de la table `absences`
 --
 
-INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
+INSERT INTO `pb_absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
 (304, 1, '2019-11-15 00:00:00', '2019-11-15 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20191115T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (303, 1, '2019-11-08 00:00:00', '2019-11-08 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20191108T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (302, 1, '2019-11-01 00:00:00', '2019-11-01 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20191101T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
@@ -185,7 +187,7 @@ INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`
 (376, 11, '2019-03-29 00:00:00', '2019-03-29 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190329T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (375, 11, '2019-03-22 00:00:00', '2019-03-22 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190322T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (374, 11, '2019-03-15 00:00:00', '2019-03-15 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190315T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR');
-INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
+INSERT INTO `pb_absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
 (373, 11, '2019-03-08 00:00:00', '2019-03-08 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190308T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (372, 11, '2019-03-01 00:00:00', '2019-03-01 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190301T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (371, 11, '2019-02-22 00:00:00', '2019-02-22 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20190222T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
@@ -316,7 +318,7 @@ INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`
 (468, 11, '2020-07-17 00:00:00', '2020-07-17 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20200717T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (469, 1, '2020-07-24 00:00:00', '2020-07-24 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20200724T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', ''),
 (470, 11, '2020-07-24 00:00:00', '2020-07-24 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-11-20180201T131937Z', '20180202T000000_20180201T131937Z_20200724T000000_20180201T132121Z', '20180202T000000_20180201T131937Z', '');
-INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
+INSERT INTO `pb_absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`, `commentaires`, `etat`, `demande`, `valide`, `validation`, `valide_n1`, `validation_n1`, `pj1`, `pj2`, `so`, `groupe`, `cal_name`, `ical_key`, `uid`, `rrule`) VALUES
 (471, 1, '2020-07-31 00:00:00', '2020-07-31 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20200731T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (472, 1, '2020-08-07 00:00:00', '2020-08-07 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20200807T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
 (473, 1, '2020-08-14 00:00:00', '2020-08-14 23:59:59', 'Temps partiel', 'Temps partiel', '', '', '2018-02-01 14:19:37', 1, '2018-02-01 13:21:20', 1, '2018-02-01 13:19:37', 0, 0, 0, '1517491177-795', 'PlanningBiblio-Absences-1-20180201T131937Z', '20180202T000000_20180201T131937Z_20200814T000000_20180201T132120Z', '20180202T000000_20180201T131937Z', 'FREQ=WEEKLY;WKST=MO;BYDAY=FR'),
@@ -396,7 +398,9 @@ INSERT INTO `absences` (`id`, `perso_id`, `debut`, `fin`, `motif`, `motif_autre`
 -- Structure de la table `absences_infos`
 --
 
-CREATE TABLE `absences_infos` (
+DROP TABLE `pb_absences_infos`;
+
+CREATE TABLE `pb_absences_infos` (
   `id` int(11) NOT NULL,
   `debut` date NOT NULL DEFAULT '0000-00-00',
   `fin` date NOT NULL DEFAULT '0000-00-00',
@@ -409,7 +413,9 @@ CREATE TABLE `absences_infos` (
 -- Structure de la table `absences_recurrentes`
 --
 
-CREATE TABLE `absences_recurrentes` (
+DROP TABLE `pb_absences_recurrentes`; 
+
+CREATE TABLE `pb_absences_recurrentes` (
   `id` int(11) NOT NULL,
   `uid` varchar(50) DEFAULT NULL,
   `perso_id` int(11) DEFAULT NULL,
@@ -424,7 +430,7 @@ CREATE TABLE `absences_recurrentes` (
 -- Contenu de la table `absences_recurrentes`
 --
 
-INSERT INTO `absences_recurrentes` (`id`, `uid`, `perso_id`, `event`, `end`, `timestamp`, `last_update`, `last_check`) VALUES
+INSERT INTO `pb_absences_recurrentes` (`id`, `uid`, `perso_id`, `event`, `end`, `timestamp`, `last_update`, `last_check`) VALUES
 (1, '20180202T000000_20180201T131937Z', 1, 'BEGIN:VCALENDAR\nPRODID:-//Planning Biblio//Planning Biblio 2.7.04//FR\nVERSION:2.7.04\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:PlanningBiblio-Absences-1-20180201T131937Z\nX-WR-TIMEZONE:Europe/Paris\nBEGIN:VTIMEZONE\nTZID:Europe/Paris\nX-LIC-LOCATION:Europe/Paris\nEND:VTIMEZONE\nBEGIN:VEVENT\nUID:20180202T000000_20180201T131937Z\nDTSTART;TZID=Europe/Paris:20180202T000000\nDTEND;TZID=Europe/Paris:20180202T235959\nDTSTAMP:20180201T131937Z\nCREATED:20180201T131937Z\nLAST-MODIFIED:20180201T132120Z\nLOCATION:\nSTATUS:CONFIRMED\nSUMMARY:Temps partiel\nDESCRIPTION:\nCATEGORIES:CATEGORIES:PBGroup=1517491177-795;PBValideN1=1;PBValidationN1=2018-02-01 14:19:37;PBValideN2=1;PBValidationN2=2018-02-01 14:21:20\n\nTRANSP:OPAQUE\nRRULE:FREQ=WEEKLY;WKST=MO;BYDAY=FR\nEND:VEVENT\nEND:VCALENDAR\n', '0', '2018-02-01 13:19:37', '2018-02-01 14:21:20', '2019-04-03 10:26:51'),
 (2, '20180202T000000_20180201T131937Z', 11, 'BEGIN:VCALENDAR\nPRODID:-//Planning Biblio//Planning Biblio 2.7.04//FR\nVERSION:2.7.04\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:PlanningBiblio-Absences-11-20180201T131937Z\nX-WR-TIMEZONE:Europe/Paris\nBEGIN:VTIMEZONE\nTZID:Europe/Paris\nX-LIC-LOCATION:Europe/Paris\nEND:VTIMEZONE\nBEGIN:VEVENT\nUID:20180202T000000_20180201T131937Z\nDTSTART;TZID=Europe/Paris:20180202T000000\nDTEND;TZID=Europe/Paris:20180202T235959\nDTSTAMP:20180201T131937Z\nCREATED:20180201T131937Z\nLAST-MODIFIED:20180201T132121Z\nLOCATION:\nSTATUS:CONFIRMED\nSUMMARY:Temps partiel\nDESCRIPTION:\nCATEGORIES:CATEGORIES:PBGroup=1517491177-795;PBValideN1=1;PBValidationN1=2018-02-01 14:19:37;PBValideN2=1;PBValidationN2=2018-02-01 14:21:20\n\nTRANSP:OPAQUE\nRRULE:FREQ=WEEKLY;WKST=MO;BYDAY=FR\nEND:VEVENT\nEND:VCALENDAR\n', '0', '2018-02-01 13:19:38', '2018-02-01 14:21:21', '2019-04-03 10:26:51');
 
@@ -434,7 +440,9 @@ INSERT INTO `absences_recurrentes` (`id`, `uid`, `perso_id`, `event`, `end`, `ti
 -- Structure de la table `acces`
 --
 
-CREATE TABLE `acces` (
+DROP TABLE `pb_acces`;
+
+CREATE TABLE `pb_acces` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
   `groupe_id` int(11) NOT NULL,
@@ -448,7 +456,7 @@ CREATE TABLE `acces` (
 -- Contenu de la table `acces`
 --
 
-INSERT INTO `acces` (`id`, `nom`, `groupe_id`, `groupe`, `page`, `ordre`, `categorie`) VALUES
+INSERT INTO `pb_acces` (`id`, `nom`, `groupe_id`, `groupe`, `page`, `ordre`, `categorie`) VALUES
 (1, 'Authentification', 99, '', 'authentification.php', 0, ''),
 (2, 'Planning - Index', 99, '', 'planning/index.php', 0, ''),
 (3, 'Planning par poste - Index', 99, '', 'planning/poste/index.php', 0, ''),
@@ -531,7 +539,9 @@ INSERT INTO `acces` (`id`, `nom`, `groupe_id`, `groupe`, `page`, `ordre`, `categ
 -- Structure de la table `activites`
 --
 
-CREATE TABLE `activites` (
+DROP TABLE `pb_activites`;
+
+CREATE TABLE `pb_activites` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
   `supprime` datetime DEFAULT NULL
@@ -541,7 +551,7 @@ CREATE TABLE `activites` (
 -- Contenu de la table `activites`
 --
 
-INSERT INTO `activites` (`id`, `nom`, `supprime`) VALUES
+INSERT INTO `pb_activites` (`id`, `nom`, `supprime`) VALUES
 (1, 'Assistance audiovisuel', NULL),
 (2, 'Assistance autoformation', NULL),
 (3, 'Communication (mÃ©diation)', NULL),
@@ -562,7 +572,9 @@ INSERT INTO `activites` (`id`, `nom`, `supprime`) VALUES
 -- Structure de la table `appel_dispo`
 --
 
-CREATE TABLE `appel_dispo` (
+DROP TABLE `pb_appel_dispo`;
+
+CREATE TABLE `pb_appel_dispo` (
   `id` int(11) NOT NULL,
   `site` int(11) NOT NULL DEFAULT '1',
   `poste` int(11) NOT NULL DEFAULT '0',
@@ -581,7 +593,9 @@ CREATE TABLE `appel_dispo` (
 -- Structure de la table `config`
 --
 
-CREATE TABLE `config` (
+DROP TABLE `pb_config`;
+
+CREATE TABLE `pb_config` (
   `id` int(11) NOT NULL,
   `nom` varchar(30) NOT NULL,
   `type` varchar(20) NOT NULL,
@@ -596,7 +610,7 @@ CREATE TABLE `config` (
 -- Contenu de la table `config`
 --
 
-INSERT INTO `config` (`id`, `nom`, `type`, `valeur`, `commentaires`, `categorie`, `valeurs`, `ordre`) VALUES
+INSERT INTO `pb_config` (`id`, `nom`, `type`, `valeur`, `commentaires`, `categorie`, `valeurs`, `ordre`) VALUES
 (1, 'Version', 'info', '2.7.10', 'Version de l&apos;application', ' Divers', '', 0),
 (2, 'Mail-IsEnabled', 'boolean', '0', 'Active ou d&eacute;sactive l&apos;envoi des mails', 'Messagerie', '', 10),
 (3, 'toutlemonde', 'boolean', '0', 'Affiche ou non l&apos;utilisateur \"tout le monde\" dans le menu.', 'Planning', '', 5),
@@ -715,7 +729,9 @@ INSERT INTO `config` (`id`, `nom`, `type`, `valeur`, `commentaires`, `categorie`
 -- Structure de la table `cron`
 --
 
-CREATE TABLE `cron` (
+DROP TABLE `pb_cron`;
+
+CREATE TABLE `pb_cron` (
   `id` int(11) NOT NULL,
   `m` varchar(2) DEFAULT NULL,
   `h` varchar(2) DEFAULT NULL,
@@ -731,7 +747,7 @@ CREATE TABLE `cron` (
 -- Contenu de la table `cron`
 --
 
-INSERT INTO `cron` (`id`, `m`, `h`, `dom`, `mon`, `dow`, `command`, `comments`, `last`) VALUES
+INSERT INTO `pb_cron` (`id`, `m`, `h`, `dom`, `mon`, `dow`, `command`, `comments`, `last`) VALUES
 (1, '0', '0', '*', '*', '*', 'planningHebdo/cron.daily.php', 'Daily Cron for planningHebdo module', '2019-04-03 10:26:51');
 
 -- --------------------------------------------------------
@@ -740,7 +756,9 @@ INSERT INTO `cron` (`id`, `m`, `h`, `dom`, `mon`, `dow`, `command`, `comments`, 
 -- Structure de la table `edt_samedi`
 --
 
-CREATE TABLE `edt_samedi` (
+DROP TABLE `pb_edt_samedi`;
+
+CREATE TABLE `pb_edt_samedi` (
   `id` int(11) NOT NULL,
   `perso_id` int(11) NOT NULL,
   `semaine` date DEFAULT NULL
@@ -752,7 +770,9 @@ CREATE TABLE `edt_samedi` (
 -- Structure de la table `heures_absences`
 --
 
-CREATE TABLE `heures_absences` (
+DROP TABLE `pb_heures_absences`;
+
+CREATE TABLE `pb_heures_absences` (
   `id` int(11) NOT NULL,
   `semaine` date DEFAULT NULL,
   `update_time` int(11) DEFAULT NULL,
@@ -763,7 +783,7 @@ CREATE TABLE `heures_absences` (
 -- Contenu de la table `heures_absences`
 --
 
-INSERT INTO `heures_absences` (`id`, `semaine`, `update_time`, `heures`) VALUES
+INSERT INTO `pb_heures_absences` (`id`, `semaine`, `update_time`, `heures`) VALUES
 (1, '2017-06-19', 1498214677, '[]'),
 (5, '2018-01-15', 1516363771, '[]'),
 (6, '2018-01-29', 1517492527, '{\"1\":\"N\\/A\",\"11\":\"N\\/A\"}'),
@@ -775,7 +795,9 @@ INSERT INTO `heures_absences` (`id`, `semaine`, `update_time`, `heures`) VALUES
 -- Structure de la table `heures_sp`
 --
 
-CREATE TABLE `heures_sp` (
+DROP TABLE `pb_heures_sp`;
+
+CREATE TABLE `pb_heures_sp` (
   `id` int(11) NOT NULL,
   `semaine` date DEFAULT NULL,
   `update_time` int(11) DEFAULT NULL,
@@ -786,7 +808,7 @@ CREATE TABLE `heures_sp` (
 -- Contenu de la table `heures_sp`
 --
 
-INSERT INTO `heures_sp` (`id`, `semaine`, `update_time`, `heures`) VALUES
+INSERT INTO `pb_heures_sp` (`id`, `semaine`, `update_time`, `heures`) VALUES
 (1, '2017-06-19', 1498214677, '{\"1\":\"0\",\"2\":0}'),
 (5, '2018-01-15', 1516363771, '{\"1\":\"0\",\"3\":\"15\",\"4\":\"8\",\"5\":\"12\",\"2\":0}'),
 (6, '2018-01-29', 1517492527, '{\"1\":\"0\",\"11\":\"0\",\"8\":\"0\",\"9\":\"0\",\"10\":\"0\",\"2\":0}'),
@@ -798,7 +820,9 @@ INSERT INTO `heures_sp` (`id`, `semaine`, `update_time`, `heures`) VALUES
 -- Structure de la table `hidden_tables`
 --
 
-CREATE TABLE `hidden_tables` (
+DROP TABLE `pb_hidden_tables`;
+
+CREATE TABLE `pb_hidden_tables` (
   `id` int(11) NOT NULL,
   `perso_id` int(11) NOT NULL DEFAULT '0',
   `tableau` int(11) NOT NULL DEFAULT '0',
@@ -809,7 +833,7 @@ CREATE TABLE `hidden_tables` (
 -- Contenu de la table `hidden_tables`
 --
 
-INSERT INTO `hidden_tables` (`id`, `perso_id`, `tableau`, `hidden_tables`) VALUES
+INSERT INTO `pb_hidden_tables` (`id`, `perso_id`, `tableau`, `hidden_tables`) VALUES
 (57, 1, 1, '[]');
 
 -- --------------------------------------------------------
@@ -818,7 +842,9 @@ INSERT INTO `hidden_tables` (`id`, `perso_id`, `tableau`, `hidden_tables`) VALUE
 -- Structure de la table `infos`
 --
 
-CREATE TABLE `infos` (
+DROP TABLE `pb_infos`;
+
+CREATE TABLE `pb_infos` (
   `id` int(11) NOT NULL,
   `debut` date DEFAULT NULL,
   `fin` date DEFAULT NULL,
@@ -831,7 +857,9 @@ CREATE TABLE `infos` (
 -- Structure de la table `ip_blocker`
 --
 
-CREATE TABLE `ip_blocker` (
+DROP TABLE `pb_ip_blocker`;
+
+CREATE TABLE `pb_ip_blocker` (
   `id` int(11) NOT NULL,
   `ip` varchar(20) NOT NULL,
   `login` varchar(100) DEFAULT NULL,
@@ -843,7 +871,7 @@ CREATE TABLE `ip_blocker` (
 -- Contenu de la table `ip_blocker`
 --
 
-INSERT INTO `ip_blocker` (`id`, `ip`, `login`, `status`, `timestamp`) VALUES
+INSERT INTO `pb_ip_blocker` (`id`, `ip`, `login`, `status`, `timestamp`) VALUES
 (1, '192.168.6.137', 'admin', 'success', '2017-06-23 10:06:36'),
 (2, '185.41.4.115', 'admin', 'success', '2017-06-23 10:24:45'),
 (3, '185.41.4.115', 'admin', 'success', '2017-06-23 10:25:26'),
@@ -902,7 +930,9 @@ INSERT INTO `ip_blocker` (`id`, `ip`, `login`, `status`, `timestamp`) VALUES
 -- Structure de la table `jours_feries`
 --
 
-CREATE TABLE `jours_feries` (
+DROP TABLE `pb_jours_feries`;
+
+CREATE TABLE `pb_jours_feries` (
   `id` int(11) NOT NULL,
   `annee` varchar(10) DEFAULT NULL,
   `jour` date DEFAULT NULL,
@@ -918,7 +948,9 @@ CREATE TABLE `jours_feries` (
 -- Structure de la table `lignes`
 --
 
-CREATE TABLE `lignes` (
+DROP TABLE `pb_lignes`;
+
+CREATE TABLE `pb_lignes` (
   `id` int(11) NOT NULL,
   `nom` text
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -929,7 +961,9 @@ CREATE TABLE `lignes` (
 -- Structure de la table `log`
 --
 
-CREATE TABLE `log` (
+DROP  TABLE `pb_log`;
+
+CREATE TABLE `pb_log` (
   `id` int(11) NOT NULL,
   `msg` text,
   `program` varchar(30) DEFAULT NULL,
@@ -940,7 +974,7 @@ CREATE TABLE `log` (
 -- Contenu de la table `log`
 --
 
-INSERT INTO `log` (`id`, `msg`, `program`, `timestamp`) VALUES
+INSERT INTO `pb_log` (`id`, `msg`, `program`, `timestamp`) VALUES
 (1, 'Agent #1 : Importation du fichier /tmp/PBCalendar-1.ics', 'ICS', '2018-02-01 13:19:37'),
 (2, 'Agent #1 : Table: absences, src: /tmp/PBCalendar-1.ics', 'ICS', '2018-02-01 13:19:37'),
 (3, 'Agent #1 : Calendrier: PlanningBiblio-Absences-1-20180201T131937Z, Fuseau horaire: Europe/Paris', 'ICS', '2018-02-01 13:19:37'),
@@ -1054,7 +1088,9 @@ INSERT INTO `log` (`id`, `msg`, `program`, `timestamp`) VALUES
 -- Structure de la table `menu`
 --
 
-CREATE TABLE `menu` (
+DROP TABLE `pb_menu`;
+
+CREATE TABLE `pb_menu` (
   `id` int(11) NOT NULL,
   `niveau1` int(11) NOT NULL,
   `niveau2` int(11) NOT NULL,
@@ -1067,7 +1103,7 @@ CREATE TABLE `menu` (
 -- Contenu de la table `menu`
 --
 
-INSERT INTO `menu` (`id`, `niveau1`, `niveau2`, `titre`, `url`, `condition`) VALUES
+INSERT INTO `pb_menu` (`id`, `niveau1`, `niveau2`, `titre`, `url`, `condition`) VALUES
 (1, 10, 0, 'Absences', 'absences/voir.php', NULL),
 (2, 10, 10, 'Voir les absences', 'absences/voir.php', NULL),
 (3, 10, 20, 'Ajouter une absence', 'absences/ajouter.php', NULL),
@@ -1102,7 +1138,9 @@ INSERT INTO `menu` (`id`, `niveau1`, `niveau2`, `titre`, `url`, `condition`) VAL
 -- Structure de la table `personnel`
 --
 
-CREATE TABLE `personnel` (
+DROP TABLE `pb_personnel`;
+
+CREATE TABLE `pb_personnel` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
   `prenom` text NOT NULL,
@@ -1137,7 +1175,7 @@ CREATE TABLE `personnel` (
 -- Contenu de la table `personnel`
 --
 
-INSERT INTO `personnel` (`id`, `nom`, `prenom`, `mail`, `statut`, `categorie`, `service`, `arrivee`, `depart`, `postes`, `actif`, `droits`, `login`, `password`, `commentaires`, `last_login`, `heures_hebdo`, `heures_travail`, `sites`, `temps`, `informations`, `recup`, `supprime`, `mails_responsables`, `matricule`, `code_ics`, `url_ics`, `check_ics`) VALUES
+INSERT INTO `pb_personnel` (`id`, `nom`, `prenom`, `mail`, `statut`, `categorie`, `service`, `arrivee`, `depart`, `postes`, `actif`, `droits`, `login`, `password`, `commentaires`, `last_login`, `heures_hebdo`, `heures_travail`, `sites`, `temps`, `informations`, `recup`, `supprime`, `mails_responsables`, `matricule`, `code_ics`, `url_ics`, `check_ics`) VALUES
 (1, 'Admin', 'Admin', 'admin@example.com', '', '', '', '0000-00-00', '0000-00-00', '', 'Inactif', '[\"22\",\"13\",1,9,\"701\",\"8\",\"25\",\"5\",\"21\",\"23\",\"801\",\"301\",\"6\",\"17\",\"4\",\"3\",99,100,20]', 'admin', '7cb99f7425705924d4d33a462cc441a1', 'Compte cr&eacute;&eacute; lors de l&apos;installation du planning', '2018-12-06 13:55:33', '0', 0, '', '[[\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\"]]', '', '', '0', '', '', NULL, NULL, '[1,1,1]'),
 (2, 'Tout le monde', '', '', '', '', '', '0000-00-00', '0000-00-00', '', 'Actif', '[99,100]', '', '', 'Compte cr&eacute;&eacute; lors de l&apos;installation du planning', '0000-00-00 00:00:00', '', 0, '', 'a:6:{i:0;a:4:{i:0;s:8:\"09:00:00\";i:1;s:8:\"12:00:00\";i:2;s:8:\"13:00:00\";i:3;s:8:\"17:00:00\";}i:1;a:4:{i:0;s:8:\"09:00:00\";i:1;s:8:\"12:00:00\";i:2;s:8:\"13:00:00\";i:3;s:8:\"17:00:00\";}i:2;a:4:{i:0;s:8:\"09:00:00\";i:1;s:8:\"12:00:00\";i:2;s:8:\"13:00:00\";i:3;s:8:\"17:00:00\";}i:3;a:4:{i:0;s:8:\"09:00:00\";i:1;s:8:\"12:00:00\";i:2;s:8:\"13:00:00\";i:3;s:8:\"17:00:00\";}i:4;a:4:{i:0;s:8:\"09:00:00\";i:1;s:8:\"12:00:00\";i:2;s:8:\"13:00:00\";i:3;s:8:\"17:00:00\";}i:5;a:4:{i:0;s:0:\"\";i:1;s:0:\"\";i:2;s:0:\"\";i:3;s:0:\"\";}}', '', '', '0', '', '', NULL, NULL, '[1,1,1]'),
 (3, 'Agent 1', 'Agent 1', 'agent1@example.com', 'Biblioth&eacute;caire', '', 'P&ocirc;le public', '0000-00-00', '0000-00-00', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', 'Supprim&eacute;', '[99,100]', 'agent-1.agent-1', '4bbd92c716cc8bcced610c7dc5b34075', '', '0000-00-00 00:00:00', '15', 0, '', '[[\"07:00:00\",\"\",\"\",\"23:00:00\"],[\"07:00:00\",\"\",\"\",\"23:00:00\"],[\"07:00:00\",\"\",\"\",\"23:00:00\"],[\"07:00:00\",\"\",\"\",\"23:00:00\"],[\"07:00:00\",\"\",\"\",\"23:00:00\"],[\"07:00:00\",\"\",\"\",\"23:00:00\"]]', '', '', '1', '', '', NULL, NULL, '[0,0,0]'),
@@ -1179,7 +1217,9 @@ INSERT INTO `personnel` (`id`, `nom`, `prenom`, `mail`, `statut`, `categorie`, `
 -- Structure de la table `planning_hebdo`
 --
 
-CREATE TABLE `planning_hebdo` (
+DROP TABLE `pb_planning_hebdo`;
+
+CREATE TABLE `pb_planning_hebdo` (
   `id` int(11) NOT NULL,
   `perso_id` int(11) NOT NULL,
   `debut` date NOT NULL,
@@ -1201,7 +1241,9 @@ CREATE TABLE `planning_hebdo` (
 -- Structure de la table `planning_hebdo_periodes`
 --
 
-CREATE TABLE `planning_hebdo_periodes` (
+DROP TABLE `pb_planning_hebdo_periodes`;
+
+CREATE TABLE `pb_planning_hebdo_periodes` (
   `id` int(11) NOT NULL,
   `annee` varchar(9) DEFAULT NULL,
   `dates` text
@@ -1213,7 +1255,9 @@ CREATE TABLE `planning_hebdo_periodes` (
 -- Structure de la table `plugins`
 --
 
-CREATE TABLE `plugins` (
+DROP TABLE `pb_plugins`;
+
+CREATE TABLE `pb_plugins` (
   `id` int(11) NOT NULL,
   `nom` varchar(30) NOT NULL,
   `version` varchar(20) DEFAULT NULL
@@ -1225,7 +1269,9 @@ CREATE TABLE `plugins` (
 -- Structure de la table `pl_notes`
 --
 
-CREATE TABLE `pl_notes` (
+DROP TABLE `pb_pl_notes`;
+
+CREATE TABLE `pb_pl_notes` (
   `id` int(11) NOT NULL,
   `date` date DEFAULT NULL,
   `site` int(3) NOT NULL DEFAULT '1',
@@ -1240,7 +1286,10 @@ CREATE TABLE `pl_notes` (
 -- Structure de la table `pl_notifications`
 --
 
-CREATE TABLE `pl_notifications` (
+DROP TABLE `pb_pl_notifications`;
+
+
+CREATE TABLE `pb_pl_notifications` (
   `id` int(11) NOT NULL,
   `date` varchar(10) DEFAULT NULL,
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -1254,7 +1303,9 @@ CREATE TABLE `pl_notifications` (
 -- Structure de la table `pl_poste`
 --
 
-CREATE TABLE `pl_poste` (
+DROP TABLE `pb_pl_poste`;
+
+CREATE TABLE `pb_pl_poste` (
   `id` mediumint(8) UNSIGNED NOT NULL,
   `perso_id` int(11) NOT NULL DEFAULT '0',
   `date` date NOT NULL DEFAULT '0000-00-00',
@@ -1273,7 +1324,7 @@ CREATE TABLE `pl_poste` (
 -- Contenu de la table `pl_poste`
 --
 
-INSERT INTO `pl_poste` (`id`, `perso_id`, `date`, `poste`, `absent`, `chgt_login`, `chgt_time`, `debut`, `fin`, `supprime`, `site`, `grise`) VALUES
+INSERT INTO `pb_pl_poste` (`id`, `perso_id`, `date`, `poste`, `absent`, `chgt_login`, `chgt_time`, `debut`, `fin`, `supprime`, `site`, `grise`) VALUES
 (1, 3, '2018-01-19', 24, '0', 1, '2018-01-19 13:06:55', '10:00:00', '11:30:00', '0', 1, '0'),
 (2, 3, '2018-01-19', 36, '0', 1, '2018-01-19 13:07:09', '11:30:00', '13:00:00', '0', 1, '0'),
 (3, 3, '2018-01-19', 4, '0', 1, '2018-01-19 13:07:11', '13:00:00', '14:30:00', '0', 1, '0'),
@@ -1300,7 +1351,9 @@ INSERT INTO `pl_poste` (`id`, `perso_id`, `date`, `poste`, `absent`, `chgt_login
 -- Structure de la table `pl_poste_cellules`
 --
 
-CREATE TABLE `pl_poste_cellules` (
+DROP TABLE `pb_pl_poste_cellules`;
+
+CREATE TABLE `pb_pl_poste_cellules` (
   `id` int(11) NOT NULL,
   `numero` int(11) NOT NULL,
   `tableau` int(11) NOT NULL,
@@ -1314,7 +1367,9 @@ CREATE TABLE `pl_poste_cellules` (
 -- Structure de la table `pl_poste_horaires`
 --
 
-CREATE TABLE `pl_poste_horaires` (
+DROP TABLE `pb_pl_poste_horaires`;
+
+CREATE TABLE `pb_pl_poste_horaires` (
   `id` int(11) NOT NULL,
   `debut` time NOT NULL DEFAULT '00:00:00',
   `fin` time NOT NULL DEFAULT '00:00:00',
@@ -1326,7 +1381,7 @@ CREATE TABLE `pl_poste_horaires` (
 -- Contenu de la table `pl_poste_horaires`
 --
 
-INSERT INTO `pl_poste_horaires` (`id`, `debut`, `fin`, `tableau`, `numero`) VALUES
+INSERT INTO `pb_pl_poste_horaires` (`id`, `debut`, `fin`, `tableau`, `numero`) VALUES
 (30, '16:00:00', '18:00:00', 1, 1),
 (29, '14:00:00', '16:00:00', 1, 1),
 (28, '13:00:00', '14:00:00', 1, 1),
@@ -1339,7 +1394,9 @@ INSERT INTO `pl_poste_horaires` (`id`, `debut`, `fin`, `tableau`, `numero`) VALU
 -- Structure de la table `pl_poste_lignes`
 --
 
-CREATE TABLE `pl_poste_lignes` (
+DROP TABLE `pb_pl_poste_lignes`;
+
+CREATE TABLE `pb_pl_poste_lignes` (
   `id` int(11) NOT NULL,
   `numero` int(11) NOT NULL,
   `tableau` int(11) NOT NULL,
@@ -1352,7 +1409,7 @@ CREATE TABLE `pl_poste_lignes` (
 -- Contenu de la table `pl_poste_lignes`
 --
 
-INSERT INTO `pl_poste_lignes` (`id`, `numero`, `tableau`, `ligne`, `poste`, `type`) VALUES
+INSERT INTO `pb_pl_poste_lignes` (`id`, `numero`, `tableau`, `ligne`, `poste`, `type`) VALUES
 (181, 1, 1, 10, '38', 'poste'),
 (180, 1, 1, 9, '11', 'poste'),
 (179, 1, 1, 8, '22', 'poste'),
@@ -1371,7 +1428,9 @@ INSERT INTO `pl_poste_lignes` (`id`, `numero`, `tableau`, `ligne`, `poste`, `typ
 -- Structure de la table `pl_poste_modeles`
 --
 
-CREATE TABLE `pl_poste_modeles` (
+DROP TABLE `pb_pl_poste_modeles`;
+
+CREATE TABLE `pb_pl_poste_modeles` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
   `perso_id` int(11) NOT NULL,
@@ -1388,7 +1447,7 @@ CREATE TABLE `pl_poste_modeles` (
 -- Contenu de la table `pl_poste_modeles`
 --
 
-INSERT INTO `pl_poste_modeles` (`id`, `nom`, `perso_id`, `poste`, `commentaire`, `debut`, `fin`, `tableau`, `jour`, `site`) VALUES
+INSERT INTO `pb_pl_poste_modeles` (`id`, `nom`, `perso_id`, `poste`, `commentaire`, `debut`, `fin`, `tableau`, `jour`, `site`) VALUES
 (1, '2018-01-19', 3, 24, '', '10:00:00', '11:30:00', '', '', 1),
 (2, '2018-01-19', 3, 36, '', '11:30:00', '13:00:00', '', '', 1),
 (3, '2018-01-19', 3, 4, '', '13:00:00', '14:30:00', '', '', 1),
@@ -1403,7 +1462,9 @@ INSERT INTO `pl_poste_modeles` (`id`, `nom`, `perso_id`, `poste`, `commentaire`,
 -- Structure de la table `pl_poste_modeles_tab`
 --
 
-CREATE TABLE `pl_poste_modeles_tab` (
+DROP TABLE `pb_pl_poste_modeles_tab`;
+
+CREATE TABLE `pb_pl_poste_modeles_tab` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
   `jour` int(11) NOT NULL,
@@ -1415,7 +1476,7 @@ CREATE TABLE `pl_poste_modeles_tab` (
 -- Contenu de la table `pl_poste_modeles_tab`
 --
 
-INSERT INTO `pl_poste_modeles_tab` (`id`, `nom`, `jour`, `tableau`, `site`) VALUES
+INSERT INTO `pb_pl_poste_modeles_tab` (`id`, `nom`, `jour`, `tableau`, `site`) VALUES
 (1, '2018-01-19', 9, 1, 1);
 
 -- --------------------------------------------------------
@@ -1424,7 +1485,9 @@ INSERT INTO `pl_poste_modeles_tab` (`id`, `nom`, `jour`, `tableau`, `site`) VALU
 -- Structure de la table `pl_poste_tab`
 --
 
-CREATE TABLE `pl_poste_tab` (
+DROP TABLE `pb_pl_poste_tab`;
+
+CREATE TABLE `pb_pl_poste_tab` (
   `id` int(11) NOT NULL,
   `tableau` int(20) NOT NULL,
   `nom` text NOT NULL,
@@ -1436,7 +1499,7 @@ CREATE TABLE `pl_poste_tab` (
 -- Contenu de la table `pl_poste_tab`
 --
 
-INSERT INTO `pl_poste_tab` (`id`, `tableau`, `nom`, `site`, `supprime`) VALUES
+INSERT INTO `pb_pl_poste_tab` (`id`, `tableau`, `nom`, `site`, `supprime`) VALUES
 (1, 1, 'Tableau 1', 1, NULL);
 
 -- --------------------------------------------------------
@@ -1445,7 +1508,9 @@ INSERT INTO `pl_poste_tab` (`id`, `tableau`, `nom`, `site`, `supprime`) VALUES
 -- Structure de la table `pl_poste_tab_affect`
 --
 
-CREATE TABLE `pl_poste_tab_affect` (
+DROP TABLE `pb_pl_poste_tab_affect`;
+
+CREATE TABLE `pb_pl_poste_tab_affect` (
   `id` int(11) NOT NULL,
   `date` date NOT NULL,
   `tableau` int(11) NOT NULL,
@@ -1456,7 +1521,7 @@ CREATE TABLE `pl_poste_tab_affect` (
 -- Contenu de la table `pl_poste_tab_affect`
 --
 
-INSERT INTO `pl_poste_tab_affect` (`id`, `date`, `tableau`, `site`) VALUES
+INSERT INTO `pb_pl_poste_tab_affect` (`id`, `date`, `tableau`, `site`) VALUES
 (1, '2017-06-23', 1, 1),
 (2, '2018-01-19', 1, 1),
 (4, '2018-01-22', 1, 1),
@@ -1469,7 +1534,9 @@ INSERT INTO `pl_poste_tab_affect` (`id`, `date`, `tableau`, `site`) VALUES
 -- Structure de la table `pl_poste_tab_grp`
 --
 
-CREATE TABLE `pl_poste_tab_grp` (
+DROP TABLE `pb_pl_poste_tab_grp`;
+
+CREATE TABLE `pb_pl_poste_tab_grp` (
   `id` int(11) NOT NULL,
   `nom` text,
   `lundi` int(11) DEFAULT NULL,
@@ -1489,7 +1556,9 @@ CREATE TABLE `pl_poste_tab_grp` (
 -- Structure de la table `pl_poste_verrou`
 --
 
-CREATE TABLE `pl_poste_verrou` (
+DROP TABLE `pb_pl_poste_verrou`;
+
+CREATE TABLE `pb_pl_poste_verrou` (
   `id` int(11) NOT NULL,
   `date` date NOT NULL DEFAULT '0000-00-00',
   `verrou` int(1) NOT NULL DEFAULT '0',
@@ -1508,7 +1577,9 @@ CREATE TABLE `pl_poste_verrou` (
 -- Structure de la table `postes`
 --
 
-CREATE TABLE `postes` (
+DROP TABLE `pb_postes`;
+
+CREATE TABLE `pb_postes` (
   `id` int(8) NOT NULL,
   `nom` text NOT NULL,
   `groupe` text NOT NULL,
@@ -1527,7 +1598,7 @@ CREATE TABLE `postes` (
 -- Contenu de la table `postes`
 --
 
-INSERT INTO `postes` (`id`, `nom`, `groupe`, `groupe_id`, `obligatoire`, `etage`, `activites`, `statistiques`, `bloquant`, `site`, `categories`, `supprime`) VALUES
+INSERT INTO `pb_postes` (`id`, `nom`, `groupe`, `groupe_id`, `obligatoire`, `etage`, `activites`, `statistiques`, `bloquant`, `site`, `categories`, `supprime`) VALUES
 (4, 'EMC 2', '', 0, 'Renfort', '', '[\"8\",\"9\",\"10\"]', '1', '0', 1, '[]', NULL),
 (5, 'ACCUEIL', '', 0, 'Obligatoire', '', '[\"5\",\"6\",\"8\",\"9\"]', '1', '1', 1, '[]', NULL),
 (6, 'PrÃªt / retour 1', '', 0, 'Obligatoire', '', '[\"7\",\"6\",\"9\"]', '1', '1', 1, '[]', '2018-02-01 14:33:42'),
@@ -1569,7 +1640,9 @@ INSERT INTO `postes` (`id`, `nom`, `groupe`, `groupe_id`, `obligatoire`, `etage`
 -- Structure de la table `select_abs`
 --
 
-CREATE TABLE `select_abs` (
+DROP TABLE `pb_select_abs`;
+
+CREATE TABLE `pb_select_abs` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL DEFAULT '0',
@@ -1580,7 +1653,7 @@ CREATE TABLE `select_abs` (
 -- Contenu de la table `select_abs`
 --
 
-INSERT INTO `select_abs` (`id`, `valeur`, `rang`, `type`) VALUES
+INSERT INTO `pb_select_abs` (`id`, `valeur`, `rang`, `type`) VALUES
 (1, 'Non justifi&eacute;e', 1, 0),
 (2, 'Cong&eacute;s pay&eacute;s', 2, 0),
 (3, 'Maladie', 3, 0),
@@ -1600,7 +1673,9 @@ INSERT INTO `select_abs` (`id`, `valeur`, `rang`, `type`) VALUES
 -- Structure de la table `select_categories`
 --
 
-CREATE TABLE `select_categories` (
+DROP TABLE `pb_select_categories`;
+
+CREATE TABLE `pb_select_categories` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL DEFAULT '0'
@@ -1610,7 +1685,7 @@ CREATE TABLE `select_categories` (
 -- Contenu de la table `select_categories`
 --
 
-INSERT INTO `select_categories` (`id`, `valeur`, `rang`) VALUES
+INSERT INTO `pb_select_categories` (`id`, `valeur`, `rang`) VALUES
 (1, 'Cat&eacute;gorie A', 10),
 (2, 'Cat&eacute;gorie B', 20),
 (3, 'Cat&eacute;gorie C', 30);
@@ -1621,7 +1696,9 @@ INSERT INTO `select_categories` (`id`, `valeur`, `rang`) VALUES
 -- Structure de la table `select_etages`
 --
 
-CREATE TABLE `select_etages` (
+DROP TABLE `pb_select_etages`;
+
+CREATE TABLE `pb_select_etages` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL DEFAULT '0'
@@ -1631,7 +1708,7 @@ CREATE TABLE `select_etages` (
 -- Contenu de la table `select_etages`
 --
 
-INSERT INTO `select_etages` (`id`, `valeur`, `rang`) VALUES
+INSERT INTO `pb_select_etages` (`id`, `valeur`, `rang`) VALUES
 (1, 'Mezzanine', 1),
 (2, 'RDC', 2),
 (3, 'RDJ', 3),
@@ -1643,7 +1720,9 @@ INSERT INTO `select_etages` (`id`, `valeur`, `rang`) VALUES
 -- Structure de la table `select_groupes`
 --
 
-CREATE TABLE `select_groupes` (
+DROP TABLE `pb_select_groupes`;
+
+CREATE TABLE `pb_select_groupes` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL DEFAULT '0'
@@ -1655,7 +1734,9 @@ CREATE TABLE `select_groupes` (
 -- Structure de la table `select_services`
 --
 
-CREATE TABLE `select_services` (
+DROP TABLE `pb_select_services`;
+
+CREATE TABLE `pb_select_services` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL,
@@ -1666,7 +1747,7 @@ CREATE TABLE `select_services` (
 -- Contenu de la table `select_services`
 --
 
-INSERT INTO `select_services` (`id`, `valeur`, `rang`, `couleur`) VALUES
+INSERT INTO `pb_select_services` (`id`, `valeur`, `rang`, `couleur`) VALUES
 (7, 'Adultes', 0, ''),
 (8, 'Jeunesse', 1, ''),
 (9, 'EMC', 2, ''),
@@ -1681,7 +1762,9 @@ INSERT INTO `select_services` (`id`, `valeur`, `rang`, `couleur`) VALUES
 -- Structure de la table `select_statuts`
 --
 
-CREATE TABLE `select_statuts` (
+DROP TABLE `pb_select_statuts`;
+
+CREATE TABLE `pb_select_statuts` (
   `id` int(11) NOT NULL,
   `valeur` text NOT NULL,
   `rang` int(11) NOT NULL DEFAULT '0',
@@ -1693,7 +1776,7 @@ CREATE TABLE `select_statuts` (
 -- Contenu de la table `select_statuts`
 --
 
-INSERT INTO `select_statuts` (`id`, `valeur`, `rang`, `couleur`, `categorie`) VALUES
+INSERT INTO `pb_select_statuts` (`id`, `valeur`, `rang`, `couleur`, `categorie`) VALUES
 (1, 'Conservateur', 1, '', 1),
 (2, 'Biblioth&eacute;caire', 2, '', 1),
 (3, 'AB', 3, '', 0),
@@ -1710,7 +1793,7 @@ INSERT INTO `select_statuts` (`id`, `valeur`, `rang`, `couleur`, `categorie`) VA
 --
 -- Index pour la table `absences`
 --
-ALTER TABLE `absences`
+ALTER TABLE `pb_absences`
   ADD PRIMARY KEY (`id`),
   ADD KEY `cal_name` (`cal_name`),
   ADD KEY `perso_id` (`perso_id`),
@@ -1721,13 +1804,13 @@ ALTER TABLE `absences`
 --
 -- Index pour la table `absences_infos`
 --
-ALTER TABLE `absences_infos`
+ALTER TABLE `pb_absences_infos`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `absences_recurrentes`
 --
-ALTER TABLE `absences_recurrentes`
+ALTER TABLE `pb_absences_recurrentes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `uid` (`uid`),
   ADD KEY `perso_id` (`perso_id`),
@@ -1737,68 +1820,68 @@ ALTER TABLE `absences_recurrentes`
 --
 -- Index pour la table `acces`
 --
-ALTER TABLE `acces`
+ALTER TABLE `pb_acces`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `activites`
 --
-ALTER TABLE `activites`
+ALTER TABLE `pb_activites`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `appel_dispo`
 --
-ALTER TABLE `appel_dispo`
+ALTER TABLE `pb_appel_dispo`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `config`
 --
-ALTER TABLE `config`
+ALTER TABLE `pb_config`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `nom` (`nom`);
 
 --
 -- Index pour la table `cron`
 --
-ALTER TABLE `cron`
+ALTER TABLE `pb_cron`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `edt_samedi`
 --
-ALTER TABLE `edt_samedi`
+ALTER TABLE `pb_edt_samedi`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `heures_absences`
 --
-ALTER TABLE `heures_absences`
+ALTER TABLE `pb_heures_absences`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `heures_sp`
 --
-ALTER TABLE `heures_sp`
+ALTER TABLE `pb_heures_sp`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `hidden_tables`
 --
-ALTER TABLE `hidden_tables`
+ALTER TABLE `pb_hidden_tables`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `infos`
 --
-ALTER TABLE `infos`
+ALTER TABLE `pb_infos`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `ip_blocker`
 --
-ALTER TABLE `ip_blocker`
+ALTER TABLE `pb_ip_blocker`
   ADD PRIMARY KEY (`id`),
   ADD KEY `ip` (`ip`),
   ADD KEY `status` (`status`),
@@ -1807,63 +1890,63 @@ ALTER TABLE `ip_blocker`
 --
 -- Index pour la table `jours_feries`
 --
-ALTER TABLE `jours_feries`
+ALTER TABLE `pb_jours_feries`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `lignes`
 --
-ALTER TABLE `lignes`
+ALTER TABLE `pb_lignes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `log`
 --
-ALTER TABLE `log`
+ALTER TABLE `pb_log`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `menu`
 --
-ALTER TABLE `menu`
+ALTER TABLE `pb_menu`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `personnel`
 --
-ALTER TABLE `personnel`
+ALTER TABLE `pb_personnel`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `login` (`login`);
 
 --
 -- Index pour la table `planning_hebdo`
 --
-ALTER TABLE `planning_hebdo`
+ALTER TABLE `pb_planning_hebdo`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `cle` (`cle`);
 
 --
 -- Index pour la table `planning_hebdo_periodes`
 --
-ALTER TABLE `planning_hebdo_periodes`
+ALTER TABLE `pb_planning_hebdo_periodes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `plugins`
 --
-ALTER TABLE `plugins`
+ALTER TABLE `pb_plugins`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_notes`
 --
-ALTER TABLE `pl_notes`
+ALTER TABLE `pb_pl_notes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_notifications`
 --
-ALTER TABLE `pl_notifications`
+ALTER TABLE `pb_pl_notifications`
   ADD PRIMARY KEY (`id`),
   ADD KEY `date` (`date`),
   ADD KEY `site` (`site`);
@@ -1871,7 +1954,7 @@ ALTER TABLE `pl_notifications`
 --
 -- Index pour la table `pl_poste`
 --
-ALTER TABLE `pl_poste`
+ALTER TABLE `pb_pl_poste`
   ADD PRIMARY KEY (`id`),
   ADD KEY `date` (`date`),
   ADD KEY `site` (`site`);
@@ -1879,97 +1962,97 @@ ALTER TABLE `pl_poste`
 --
 -- Index pour la table `pl_poste_cellules`
 --
-ALTER TABLE `pl_poste_cellules`
+ALTER TABLE `pb_pl_poste_cellules`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_horaires`
 --
-ALTER TABLE `pl_poste_horaires`
+ALTER TABLE `pb_pl_poste_horaires`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_lignes`
 --
-ALTER TABLE `pl_poste_lignes`
+ALTER TABLE `pb_pl_poste_lignes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_modeles`
 --
-ALTER TABLE `pl_poste_modeles`
+ALTER TABLE `pb_pl_poste_modeles`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_modeles_tab`
 --
-ALTER TABLE `pl_poste_modeles_tab`
+ALTER TABLE `pb_pl_poste_modeles_tab`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_tab`
 --
-ALTER TABLE `pl_poste_tab`
+ALTER TABLE `pb_pl_poste_tab`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_tab_affect`
 --
-ALTER TABLE `pl_poste_tab_affect`
+ALTER TABLE `pb_pl_poste_tab_affect`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_tab_grp`
 --
-ALTER TABLE `pl_poste_tab_grp`
+ALTER TABLE `pb_pl_poste_tab_grp`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `pl_poste_verrou`
 --
-ALTER TABLE `pl_poste_verrou`
+ALTER TABLE `pb_pl_poste_verrou`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `postes`
 --
-ALTER TABLE `postes`
+ALTER TABLE `pb_postes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_abs`
 --
-ALTER TABLE `select_abs`
+ALTER TABLE `pb_select_abs`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_categories`
 --
-ALTER TABLE `select_categories`
+ALTER TABLE `pb_select_categories`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_etages`
 --
-ALTER TABLE `select_etages`
+ALTER TABLE `pb_select_etages`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_groupes`
 --
-ALTER TABLE `select_groupes`
+ALTER TABLE `pb_select_groupes`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_services`
 --
-ALTER TABLE `select_services`
+ALTER TABLE `pb_select_services`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `select_statuts`
 --
-ALTER TABLE `select_statuts`
+ALTER TABLE `pb_select_statuts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1979,207 +2062,207 @@ ALTER TABLE `select_statuts`
 --
 -- AUTO_INCREMENT pour la table `absences`
 --
-ALTER TABLE `absences`
+ALTER TABLE `pb_absences`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=543;
 --
 -- AUTO_INCREMENT pour la table `absences_infos`
 --
-ALTER TABLE `absences_infos`
+ALTER TABLE `pb_absences_infos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `absences_recurrentes`
 --
-ALTER TABLE `absences_recurrentes`
+ALTER TABLE `pb_absences_recurrentes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `acces`
 --
-ALTER TABLE `acces`
+ALTER TABLE `pb_acces`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 --
 -- AUTO_INCREMENT pour la table `activites`
 --
-ALTER TABLE `activites`
+ALTER TABLE `pb_activites`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT pour la table `appel_dispo`
 --
-ALTER TABLE `appel_dispo`
+ALTER TABLE `pb_appel_dispo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `config`
 --
-ALTER TABLE `config`
+ALTER TABLE `pb_config`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 --
 -- AUTO_INCREMENT pour la table `cron`
 --
-ALTER TABLE `cron`
+ALTER TABLE `pb_cron`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `edt_samedi`
 --
-ALTER TABLE `edt_samedi`
+ALTER TABLE `pb_edt_samedi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `heures_absences`
 --
-ALTER TABLE `heures_absences`
+ALTER TABLE `pb_heures_absences`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `heures_sp`
 --
-ALTER TABLE `heures_sp`
+ALTER TABLE `pb_heures_sp`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `hidden_tables`
 --
-ALTER TABLE `hidden_tables`
+ALTER TABLE `pb_hidden_tables`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 --
 -- AUTO_INCREMENT pour la table `infos`
 --
-ALTER TABLE `infos`
+ALTER TABLE `pb_infos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `ip_blocker`
 --
-ALTER TABLE `ip_blocker`
+ALTER TABLE `pb_ip_blocker`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT pour la table `jours_feries`
 --
-ALTER TABLE `jours_feries`
+ALTER TABLE `pb_jours_feries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `lignes`
 --
-ALTER TABLE `lignes`
+ALTER TABLE `pb_lignes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `log`
 --
-ALTER TABLE `log`
+ALTER TABLE `pb_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 --
 -- AUTO_INCREMENT pour la table `menu`
 --
-ALTER TABLE `menu`
+ALTER TABLE `pb_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT pour la table `personnel`
 --
-ALTER TABLE `personnel`
+ALTER TABLE `pb_personnel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT pour la table `planning_hebdo`
 --
-ALTER TABLE `planning_hebdo`
+ALTER TABLE `pb_planning_hebdo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `planning_hebdo_periodes`
 --
-ALTER TABLE `planning_hebdo_periodes`
+ALTER TABLE `pb_planning_hebdo_periodes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `plugins`
 --
-ALTER TABLE `plugins`
+ALTER TABLE `pb_plugins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `pl_notes`
 --
-ALTER TABLE `pl_notes`
+ALTER TABLE `pb_pl_notes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `pl_notifications`
 --
-ALTER TABLE `pl_notifications`
+ALTER TABLE `pb_pl_notifications`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `pl_poste`
 --
-ALTER TABLE `pl_poste`
+ALTER TABLE `pb_pl_poste`
   MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_cellules`
 --
-ALTER TABLE `pl_poste_cellules`
+ALTER TABLE `pb_pl_poste_cellules`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_horaires`
 --
-ALTER TABLE `pl_poste_horaires`
+ALTER TABLE `pb_pl_poste_horaires`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_lignes`
 --
-ALTER TABLE `pl_poste_lignes`
+ALTER TABLE `pb_pl_poste_lignes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=182;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_modeles`
 --
-ALTER TABLE `pl_poste_modeles`
+ALTER TABLE `pb_pl_poste_modeles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_modeles_tab`
 --
-ALTER TABLE `pl_poste_modeles_tab`
+ALTER TABLE `pb_pl_poste_modeles_tab`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_tab`
 --
-ALTER TABLE `pl_poste_tab`
+ALTER TABLE `pb_pl_poste_tab`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_tab_affect`
 --
-ALTER TABLE `pl_poste_tab_affect`
+ALTER TABLE `pb_pl_poste_tab_affect`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_tab_grp`
 --
-ALTER TABLE `pl_poste_tab_grp`
+ALTER TABLE `pb_pl_poste_tab_grp`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `pl_poste_verrou`
 --
-ALTER TABLE `pl_poste_verrou`
+ALTER TABLE `pb_pl_poste_verrou`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `postes`
 --
-ALTER TABLE `postes`
+ALTER TABLE `pb_postes`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT pour la table `select_abs`
 --
-ALTER TABLE `select_abs`
+ALTER TABLE `pb_select_abs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT pour la table `select_categories`
 --
-ALTER TABLE `select_categories`
+ALTER TABLE `pb_select_categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT pour la table `select_etages`
 --
-ALTER TABLE `select_etages`
+ALTER TABLE `pb_select_etages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `select_groupes`
 --
-ALTER TABLE `select_groupes`
+ALTER TABLE `pb_select_groupes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `select_services`
 --
-ALTER TABLE `select_services`
+ALTER TABLE `pb_select_services`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT pour la table `select_statuts`
 --
-ALTER TABLE `select_statuts`
+ALTER TABLE `pb_select_statuts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
